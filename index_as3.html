@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.9.4/styles/salesforce-lightning-design-system.min.css"/> 
+  <link rel="stylesheet" href="custom_as3.css"/>
+  <script src="index.js"></script>
+  <title>index</title>
+</head>
+<body id="bod">
+    <div class="slds-page-header slds-page-width ">
+        <div class="slds-grid slds-page-header__padding slds-wrap ">
+            <div class="slds-col slds-size_2-of-12  web-display-none">
+                <button onclick="mobileHamburger()">
+                    <span class="slds-icon_container slds-icon-utility-announcement" title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rows"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Description of icon when needed</span>
+                    </span>
+                </button>
+            </div>
+            <div class="slds-col slds-size_2-of-12 slds-large-size_2-of-12">
+                <img class="logo" src="rocx.jpeg" alt="logo" />
+            </div>
+            <div class="slds-col_bump-left ">
+
+            </div>
+            <div class="slds-col slds-large-size_1-of-12 slds-text_small_light mobile-display-none ">
+                <span>Dashboard</span>
+            </div>
+            <div class="slds-col slds-size_2-of-12 slds-large-size_1-of-12 ">
+                <span class="slds-icon_container slds-icon-utility-announcement" title="Description of icon when needed">
+                    <svg class="slds-icon slds-icon--small  slds-icon-text-default" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#notification"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Description of icon when needed</span>
+                </span>
+            </div>
+            <div class="slds-col slds-size_1-of-12 slds-large-size_1-of-12">
+                <span class="slds-icon_container slds-icon-action-canvas  slds-icon-utility-announcement" title="Description of icon when needed">
+                    <svg class="slds-icon slds-icon--x-small slds-icon-text-default" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#user"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Description of icon when needed</span>
+                </span>
+            </div>
+            <div class="slds-col slds-large-size_1-of-12 slds-text_small_light mobile-display-none">
+                <span>Riddhi Agarwal</span>
+            </div>
+            <div class="slds-col slds-size_1-of-12 slds-large-size_1-of-12">
+                <span class="slds-icon_container slds-icon-utility-announcement" title="Description of icon when needed">
+                    <svg class="slds-icon mobile-display-none slds-icon--small slds-icon-text-default" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Description of icon when needed</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slds-grid sub-container slds-wrap slds">
+        <div class="slds-col slds-large-size_2-of-12 mobile-display-none">
+            <div class="index slds-card">
+                <div class="slds-grid slds-grid_vertical" >
+                    <div class="slds-col">
+                        <div class="index-text-heading ">Summary</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text ">Account Summary</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text-heading ">Invvestments</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text ">My Investments</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text ">Investors List</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text-heading ">Documents</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text ">My Documents</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text ">Delegate Document</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text-heading ">Transactions</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text">My Transactions</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text-heading ">Delegate</div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="index-text">My Delegate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-col slds-large-size_10-of-12">
+            <div class="slds-col slds-large-size_12-of-12">
+                <div class="container ">
+                    <div class="slds-grid slds-gutters contatiner_text ">
+                        <div class="slds-col slds-large-size_2-of-12 mobile-display-none slds-text_big_bold">
+                            <span>Investors List</span>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12 slds-large-size_3-of-12 ">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                                  <svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default" aria-hidden="true">
+                                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+                                  </svg>
+                                  <input type="text" id="text-input-id-1" placeholder="Search by Name or Email…" class="slds-input" />
+                                </div>
+                              </div>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 slds-large-size_2-of-12  ">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                  <div class="slds-combobox_container  slds-size_xx-small">
+                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click " aria-expanded="false" aria-haspopup="listbox" role="combobox" id="both">
+                                      <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                        <input type="text" class="slds-input slds-combobox__input" id="combobox-id-1" aria-controls="listbox-id-1" autocomplete="off" role="textbox" placeholder="Both" readonly="" onclick="bothFun()"/>
+                                        <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                          <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                                          </svg>
+                                        </span>
+                                      </div>
+                                      <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                        <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                          <li role="presentation" class="slds-listbox__item">
+                                            <div id="option1" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                              <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                              <span class="slds-media__body">
+                                                <span class="slds-truncate" title="Option A">A</span>
+                                              </span>
+                                            </div>
+                                          </li>
+                                          <li role="presentation" class="slds-listbox__item">
+                                            <div id="option2" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                              <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                              <span class="slds-media__body">
+                                                <span class="slds-truncate" title="Option B">B</span>
+                                              </span>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 slds-large-size_1-of-12 ">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                  <div class="slds-combobox_container slds-size_xx-small">
+                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox" id="all">
+                                      <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                        <input type="text" class="slds-input slds-combobox__input" id="combobox-id-1" aria-controls="listbox-id-1" autocomplete="off" role="textbox" placeholder="All" readonly="" onclick = "allFun()"/>
+                                        <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                          <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                                          </svg>
+                                        </span>
+                                      </div>
+                                      <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                        <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                          <li role="presentation" class="slds-listbox__item">
+                                            <div id="option1" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                              <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                              <span class="slds-media__body">
+                                                <span class="slds-truncate" title="Option A">A</span>
+                                              </span>
+                                            </div>
+                                          </li>
+                                          <li role="presentation" class="slds-listbox__item">
+                                            <div id="option2" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                              <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                              <span class="slds-media__body">
+                                                <span class="slds-truncate" title="Option B">B</span>
+                                              </span>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-12 mobile-display-none"></div>
+                        <div class="slds-col slds-large-size_2-of-12 slds-gutters_direct-xxx-small mobile-display-none">
+                            <div class="slds-grid ">
+                                <div class="slds-col">
+                                    <div style="padding:0.5rem;">
+                                        <div class="slds-hint-parent">
+                                          <button class="slds-button slds-button_icon slds-button_icon-border" title="More Options" onclick="location.reload()">
+                                            <svg class="slds-button__icon " aria-hidden="true">
+                                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#list"></use>
+                                            </svg>
+                                          </button>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="slds-col slds-gutters_direct-xxx-small">
+                                    <div style="padding:0.5rem;">
+                                        <div class="slds-hint-parent">
+                                          <button class="slds-button slds-button_icon slds-button_icon-border" onclick="webCardView()" >
+                                            <svg class="slds-button__icon " aria-hidden="true">
+                                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#ad_set"></use>
+                                            </svg>
+                                          </button>
+                                        </div>
+                                      </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-12 slds-gutters_direct-xxx-small mobile-display-none">
+                            <div style="padding:0.5rem;">
+                                <div class="slds-hint-parent">
+                                  <button class="slds-button slds-button_icon slds-button_icon-border" title="More Options">
+                                    <svg class="slds-button__icon " aria-hidden="true">
+                                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#download"></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div >
+                    <div class="mobile-display-none heading webr" id="headin" >
+                        <div class="slds-grid slds-gutters contatiner_text  slds-p-bottom_small ">
+                            <div class="slds-col slds-large-size_1-of-12">
+                                <span></span>
+                            </div>
+                            <div class="slds-col slds-large-size_2-of-12 ">
+                            <span class="slds-text_small_light">Name</span>
+                            </div>
+                            <div class="slds-col slds-large-size_1-of-12 ">
+                                <span class=""></span>
+                            </div>
+                            <div class="slds-col slds-large-size_2-of-12 ">
+                                <span class="slds-text_small_light">Total Contribution</span>
+                            </div>
+                            <div class="slds-col slds-large-size_2-of-12 ">
+                                <span class="slds-text_small_light">Total Distribution</span>
+                            </div>
+                            <div class="slds-col slds-large-size_2-of-12">
+                                <span class="slds-text_small_light">Total Amount</span>
+                            </div>
+                            <div class="slds-col slds-large-size_2-of-12">
+                                <div class="slds-col">
+                                    <span class="slds-text_small_light">Details</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+              
+                <div class="" id="card-view">
+                <article class="slds-card slds-card_stretch xyz" >
+                    <div class="slds-grid slds-wrap ">
+                        <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_1-of-12 align_center slds-p-top_medium">
+                            <img class="card_image" src="man.jpeg">
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12 slds-p-top_medium ">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 align_center webcrd"> 
+                                <span class="slds-text_big_bold " id="a">Marcel Zane</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 web-display-none align_center webcrd">
+                                <span class="slds-text_small_light  " id="d">marcel@zane.com</span>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12  slds-p-top_medium webcrd">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 web-display-none align_center webcrdin"> 
+                                <span class="slds-text_small_light " id="b">Total Contributions</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 align_center webcrdin">
+                                <span class="slds-text_big_bold " id="c">$48,897</span>
+                            </div>
+                        </div>
+                        
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                                <span class="slds-text_big_bold">$78,764</span>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                                <span class="slds-text_big_bold">$43,547</span>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_2-of-12 align_center btn-partition slds-p-bottom_small slds-p-top_small">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col">
+                                    <a href="#">
+                                        <span data-slds-trend="brand" class="slds-icon-trend slds-is-animated" title="Description of the icon">
+                                            <svg viewBox="0 0 16 16" aria-hidden="true">
+                                                <path class="slds-icon-trend__arrow mobile-display-none" d="M.75 8H11M8 4.5L11.5 8 8 11.5"></path>
+                                                <circle class="slds-icon-trend__circle mobile-display-none" cy="8" cx="8" r="7.375" transform="rotate(-28 8 8) scale(-1 1) translate(-16 0)"> </circle>
+                                            </svg>
+                                            <span class="slds-assistive-text">Text alternative</span>
+                                        </span>
+                                        <span>View</span>
+                                    </a>
+                                </div>
+                                <div class="slds-col mobile-display-none webcrdrmv">
+                                    <a href="#"> ...</a>
+                                </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="slds-card slds-card_stretch xyz" >
+                  <div class="slds-grid slds-wrap ">
+                      <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_1-of-12 align_center slds-p-top_medium">
+                          <img class="card_image" src="man.jpeg">
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12 slds-p-top_medium ">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 align_center webcrd"> 
+                              <span class="slds-text_big_bold " id="a">Marcel Zane</span>
+                          </div>
+                          <div class="slds-col slds-size_1-of-1 web-display-none align_center webcrd">
+                              <span class="slds-text_small_light  " id="d">marcel@zane.com</span>
+                          </div>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12  slds-p-top_medium webcrd">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 web-display-none align_center webcrdin"> 
+                              <span class="slds-text_small_light " id="b">Total Contributions</span>
+                          </div>
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 align_center webcrdin">
+                              <span class="slds-text_big_bold " id="c">$48,897</span>
+                          </div>
+                      </div>
+                      
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                              <span class="slds-text_big_bold">$78,764</span>
+                          </div>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                              <span class="slds-text_big_bold">$43,547</span>
+                          </div>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_2-of-12 align_center btn-partition slds-p-bottom_small slds-p-top_small">
+                          <div class="slds-grid slds-gutters">
+                              <div class="slds-col">
+                                  <a href="#">
+                                      <span data-slds-trend="brand" class="slds-icon-trend slds-is-animated" title="Description of the icon">
+                                          <svg viewBox="0 0 16 16" aria-hidden="true">
+                                              <path class="slds-icon-trend__arrow mobile-display-none" d="M.75 8H11M8 4.5L11.5 8 8 11.5"></path>
+                                              <circle class="slds-icon-trend__circle mobile-display-none" cy="8" cx="8" r="7.375" transform="rotate(-28 8 8) scale(-1 1) translate(-16 0)"> </circle>
+                                          </svg>
+                                          <span class="slds-assistive-text">Text alternative</span>
+                                      </span>
+                                      <span>View</span>
+                                  </a>
+                              </div>
+                              <div class="slds-col mobile-display-none webcrdrmv">
+                                  <a href="#"> ...</a>
+                              </div>
+                      </div>
+                  </div>
+              </article>
+
+                <article class="slds-card slds-card_stretch " >
+                  <div class="slds-grid slds-wrap ">
+                      <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_1-of-12 align_center slds-p-top_medium">
+                          <img class="card_image" src="man.jpeg">
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12 slds-p-top_medium ">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 align_center webcrd"> 
+                              <span class="slds-text_big_bold " id="a">Marcel Zane</span>
+                          </div>
+                          <div class="slds-col slds-size_1-of-1 web-display-none align_center webcrd">
+                              <span class="slds-text_small_light  " id="d">marcel@zane.com</span>
+                          </div>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12  slds-p-top_medium webcrd">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 web-display-none align_center webcrdin"> 
+                              <span class="slds-text_small_light " id="b">Total Contributions</span>
+                          </div>
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 align_center webcrdin">
+                              <span class="slds-text_big_bold " id="c">$48,897</span>
+                          </div>
+                      </div>
+                      
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                              <span class="slds-text_big_bold">$78,764</span>
+                          </div>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                          <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                              <span class="slds-text_big_bold">$43,547</span>
+                          </div>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_2-of-12 align_center btn-partition slds-p-bottom_small slds-p-top_small">
+                          <div class="slds-grid slds-gutters">
+                              <div class="slds-col">
+                                  <a href="#">
+                                      <span data-slds-trend="brand" class="slds-icon-trend slds-is-animated" title="Description of the icon">
+                                          <svg viewBox="0 0 16 16" aria-hidden="true">
+                                              <path class="slds-icon-trend__arrow mobile-display-none" d="M.75 8H11M8 4.5L11.5 8 8 11.5"></path>
+                                              <circle class="slds-icon-trend__circle mobile-display-none" cy="8" cx="8" r="7.375" transform="rotate(-28 8 8) scale(-1 1) translate(-16 0)"> </circle>
+                                          </svg>
+                                          <span class="slds-assistive-text">Text alternative</span>
+                                      </span>
+                                      <span>View</span>
+                                  </a>
+                              </div>
+                              <div class="slds-col mobile-display-none webcrdrmv">
+                                  <a href="#"> ...</a>
+                              </div>
+                      </div>
+                  </div>
+              </article>
+
+              <article class="slds-card slds-card_stretch " >
+                <div class="slds-grid slds-wrap ">
+                    <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_1-of-12 align_center slds-p-top_medium">
+                        <img class="card_image" src="man.jpeg">
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12 slds-p-top_medium ">
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 align_center webcrd"> 
+                            <span class="slds-text_big_bold " id="a">Marcel Zane</span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 web-display-none align_center webcrd">
+                            <span class="slds-text_small_light  " id="d">marcel@zane.com</span>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12  slds-p-top_medium webcrd">
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 web-display-none align_center webcrdin"> 
+                            <span class="slds-text_small_light " id="b">Total Contributions</span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 align_center webcrdin">
+                            <span class="slds-text_big_bold " id="c">$48,897</span>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                            <span class="slds-text_big_bold">$78,764</span>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                            <span class="slds-text_big_bold">$43,547</span>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_2-of-12 align_center btn-partition slds-p-bottom_small slds-p-top_small">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col">
+                                <a href="#">
+                                    <span data-slds-trend="brand" class="slds-icon-trend slds-is-animated" title="Description of the icon">
+                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                            <path class="slds-icon-trend__arrow mobile-display-none" d="M.75 8H11M8 4.5L11.5 8 8 11.5"></path>
+                                            <circle class="slds-icon-trend__circle mobile-display-none" cy="8" cx="8" r="7.375" transform="rotate(-28 8 8) scale(-1 1) translate(-16 0)"> </circle>
+                                        </svg>
+                                        <span class="slds-assistive-text">Text alternative</span>
+                                    </span>
+                                    <span>View</span>
+                                </a>
+                            </div>
+                            <div class="slds-col mobile-display-none webcrdrmv">
+                                <a href="#"> ...</a>
+                            </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="slds-card slds-card_stretch " >
+              <div class="slds-grid slds-wrap ">
+                  <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_1-of-12 align_center slds-p-top_medium">
+                      <img class="card_image" src="man.jpeg">
+                  </div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12 slds-p-top_medium ">
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 align_center webcrd"> 
+                          <span class="slds-text_big_bold " id="a">Marcel Zane</span>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 web-display-none align_center webcrd">
+                          <span class="slds-text_small_light  " id="d">marcel@zane.com</span>
+                      </div>
+                  </div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12  slds-p-top_medium webcrd">
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 web-display-none align_center webcrdin"> 
+                          <span class="slds-text_small_light " id="b">Total Contributions</span>
+                      </div>
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 align_center webcrdin">
+                          <span class="slds-text_big_bold " id="c">$48,897</span>
+                      </div>
+                  </div>
+                  
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                          <span class="slds-text_big_bold">$78,764</span>
+                      </div>
+                  </div>
+                  <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 webcrdrmv slds-p-top_medium">
+                      <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12 align_center mobile-display-none">
+                          <span class="slds-text_big_bold">$43,547</span>
+                      </div>
+                  </div>
+                  <div class="slds-col slds-size_1-of-1 webcrd slds-large-size_2-of-12 align_center btn-partition slds-p-bottom_small slds-p-top_small">
+                      <div class="slds-grid slds-gutters">
+                          <div class="slds-col">
+                              <a href="#">
+                                  <span data-slds-trend="brand" class="slds-icon-trend slds-is-animated" title="Description of the icon">
+                                      <svg viewBox="0 0 16 16" aria-hidden="true">
+                                          <path class="slds-icon-trend__arrow mobile-display-none" d="M.75 8H11M8 4.5L11.5 8 8 11.5"></path>
+                                          <circle class="slds-icon-trend__circle mobile-display-none" cy="8" cx="8" r="7.375" transform="rotate(-28 8 8) scale(-1 1) translate(-16 0)"> </circle>
+                                      </svg>
+                                      <span class="slds-assistive-text">Text alternative</span>
+                                  </span>
+                                  <span>View</span>
+                              </a>
+                          </div>
+                          <div class="slds-col mobile-display-none webcrdrmv">
+                              <a href="#"> ...</a>
+                          </div>
+                  </div>
+              </div>
+          </article>
+        
+            </div>
+        </div>  
+    </div>
+    </div>
+    
+
+    </div>
+
+  <div class="mobile-hamburger web-display-none" id="mblhmbrgr">
+        <ul class="slds-accordion">
+            <li class="slds-accordion__list-item">
+              <section class="slds-accordion__section " id="sum">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-39" aria-expanded="true" title="Accordion summary" onclick = "sumFun()">
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">SUMMARY</span>
+                    </button>
+                  </h2>
+                </div>
+                <div class="slds-accordion__content" id="referenceId-39">Summary 1</div>
+                <div class="slds-accordion__content" id="referenceId-39">Summary 2</div>
+                <div class="slds-accordion__content" id="referenceId-39">Summary 3</div>
+              </section>
+            </li>
+            <li class="slds-accordion__list-item">
+              <section class="slds-accordion__section " id="inv">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-39" aria-expanded="true" title="Accordion summary" onclick = "invFun()">
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">Investments</span>
+                    </button>
+                  </h2>
+                </div>
+                <div class="slds-accordion__content" id="referenceId-39">Invest</div>
+                <div class="slds-accordion__content" id="referenceId-39">Sell</div>
+                <div class="slds-accordion__content" id="referenceId-39">Buy</div>
+              </section>
+            </li>
+            <li class="slds-accordion__list-item">
+              <section class="slds-accordion__section " id="doc">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-39" aria-expanded="true" title="Accordion summary" onclick = "docFun()">
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">DOCUMENTS</span>
+                    </button>
+                  </h2>
+                </div>
+                <div class="slds-accordion__content" id="referenceId-39">Tax</div>
+                <div class="slds-accordion__content" id="referenceId-39">Legal</div>
+                <div class="slds-accordion__content" id="referenceId-39">Update Memos</div>
+                <div class="slds-accordion__content" id="referenceId-39">Financial Statement</div>
+                <div class="slds-accordion__content" id="referenceId-39">Capital Statement</div>
+                <div class="slds-accordion__content" id="referenceId-39">Capital calls + Distibutions</div>
+                <div class="slds-accordion__content" id="referenceId-39">Annual Meetings</div>
+              </section>
+            </li>
+            <li class="slds-accordion__list-item">
+              <section class="slds-accordion__section " id="tra">
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-39" aria-expanded="true" title="Accordion summary" onclick="traFun()">
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">TRANSACTIONS</span>
+                    </button>
+                  </h2>
+                </div>
+                <div class="slds-accordion__content" id="referenceId-39">Withdraw</div>
+                <div class="slds-accordion__content" id="referenceId-39">Deposit</div>
+                <div class="slds-accordion__content" id="referenceId-39">Check Balance</div>
+              </section>
+            </li>
+            <li class="slds-accordion__list-item">
+              <section class="slds-accordion__section " id="del"> 
+                <div class="slds-accordion__summary">
+                  <h2 class="slds-accordion__summary-heading">
+                    <button class="slds-button slds-button_reset slds-accordion__summary-action" aria-controls="referenceId-39" aria-expanded="true" title="Accordion summary" onclick="delFun()">
+                      <svg class="slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                      </svg>
+                      <span class="slds-accordion__summary-content">DELEGATE</span>
+                    </button>
+                  </h2>
+                </div>
+                <div class="slds-accordion__content" id="referenceId-39">Del 1</div>
+                <div class="slds-accordion__content" id="referenceId-39">Del 2</div>
+                <div class="slds-accordion__content" id="referenceId-39">Del 3</div>
+              </section>
+            </li>
+          
+          </ul>
+    </div>
+</body>
+</html>
