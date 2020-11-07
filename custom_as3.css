@@ -1,0 +1,147 @@
+/* fonts */
+.slds-text_big_bold {
+  font-size: 2rem;
+  font-family: Roboto-Medium, sans-serif;
+}
+.slds-text_small_light {
+  font-size: 1rem;
+  color: grey;
+  font-weight: lighter;
+  font-family: Roboto-Medium, sans-serif;
+}
+.heading-text {
+  color: rgb(48, 48, 48);
+  font-weight: normal;
+  letter-spacing: 0px;
+  font-size-adjust: inherit;
+  font-size: 1rem;
+  font-family: Roboto-Medium, sans-serif;
+}
+.index-text-heading {
+  color: rgb(0, 160, 255);
+  font-family: Roboto-Medium, sans-serif;
+  padding: 1rem;
+  font-size: larger;
+}
+.index-text {
+  color: rgb(48, 48, 48);
+  font-family: Roboto-Medium, sans-serif;
+  padding: 1rem;
+}
+/*Visual aids*/
+.extra {
+  flex-wrap: wrap;
+}
+.slds-page-width {
+  width: 100%;
+}
+.mobile-hamburger {
+  height: 100%;
+  color: rgb(252, 252, 252);
+  background: rgb(48, 48, 48);
+  font-family: Roboto-Medium, sans-serif;
+  position: absolute;
+  top: 6.5rem;
+  left: 0px;
+  display: none;
+  z-index: 2;
+}
+.align_center {
+  display: flex;
+  justify-content: center;
+}
+.sub-container {
+  background: #ffffff;
+}
+.container {
+  background: rgb(252, 252, 252);
+  padding: 3rem;
+}
+.slds-page-header__padding {
+  padding: 1rem;
+}
+.logo {
+  background: rgb(255, 255, 255);
+  height: 2rem;
+  width: auto;
+}
+.clr {
+  background: pink;
+}
+.slds-card {
+  margin: 2rem;
+  width: 80%;
+}
+.card_image {
+  border-radius: 50%;
+  height: 20%;
+  width: 20%;
+  background: rgb(255, 255, 255);
+}
+
+.btn-partition {
+  border-top: 1px solid rgb(0, 0, 0, 0.15);
+}
+.mobile-display-none {
+  display: none;
+}
+
+.slds-card:hover {
+  transform: scale(1.05);
+}
+.index {
+  background: linear-gradient(
+    -45deg,
+    rgb(239, 243, 248) 0%,
+    rgb(231, 246, 255) 100%
+  );
+}
+#mblhmbrgr {
+  display: none;
+}
+/*for web view*/
+@media screen and (min-width: 1020px) {
+  .mobile-display-none {
+    display: inline;
+  }
+  .slds-text_big_bold {
+    color: rgb(48, 48, 48);
+    font-size: 1rem;
+    display: inline;
+    font-weight: normal;
+    letter-spacing: 0px;
+  }
+  .card_image {
+    height: 35%;
+    width: 35%;
+  }
+  .btn-partition {
+    border-top: 1px solid rgb(0, 0, 0, 0);
+  }
+  .slds-card {
+    padding: 1rem;
+    margin: 0rem;
+    width: 100%;
+  }
+  .slds-card:hover {
+    transform: scale(1);
+  }
+  .align_center {
+    display: inline;
+  }
+  .web-display-none {
+    display: none;
+  }
+  .mobile-hamburger {
+    z-index: -1;
+    height: 0%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .card-view {
+    display: block;
+  }
+  .slds-card:hover {
+    transform: scale(1.05);
+  }
+}
