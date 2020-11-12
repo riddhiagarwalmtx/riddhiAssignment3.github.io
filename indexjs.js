@@ -52,8 +52,8 @@ function mobileHamburger() {
     item.style.flexWrap = "wrap";
     item.classList.add("slds-col");
     item.classList.add("slds-large-size_2-of-12");
-    item.style.height = "30%";
-    item.style.width = "30%";
+    item.style.height = "25%";
+    item.style.width = "25%";
     
 }
   }
@@ -65,7 +65,7 @@ function mobileHamburger() {
     item.style.display ="flex";
     console.log(index);
     if((index%5) == 1 || (index%5) == 2){
-      item.style.marginLeft = "8rem";
+      item.style.marginLeft = "7rem";
     }
     if((index%5) == 3){
       item.style.paddingBottom = "1rem";
