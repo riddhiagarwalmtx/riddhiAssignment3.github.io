@@ -144,6 +144,9 @@
     z-index: -1;
     height: 0%;
   }
+  .slds-card + .slds-card {
+    margin-top: 0rem;
+  }
 }
 @media screen and (max-width: 1020px) {
   .card-view {
